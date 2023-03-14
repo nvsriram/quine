@@ -1,0 +1,41 @@
+<span class="content"></span>
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+<script>
+    var myTags = "PHNwYW4gY2xhc3M9ImNvbnRlbnQiPjwvc3Bhbj4KPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vVGFnQ2xvdWRAMi4yLjAvZGlzdC9UYWdDbG91ZC5taW4uanMiPjwvc2NyaXB0Pgo8c2NyaXB0Pgp2YXIgbXlUYWdzID0gIg=="
+        + " OwogICAgdmFyIGNvbiA9IFtdCiAgICBjb25zdCBiID0gbXlUYWdzLnNwbGl0KCIgIikKICAgIGZvciAoaiBpbiBjID0gYXRvYihiWzBdKS5zcGxpdCgnXG4nKSkgewogICAgICAgIGNvbi5wdXNoKGNbal0pCiAgICB9CiAgICBjb24ucHVzaChiWzBdKQogICAgY29uLnB1c2goIiArICIpCiAgICBjb24ucHVzaChiWzFdKTsKICAgIGZvciAoaiBpbiBjID0gYXRvYihiWzFdKS5zcGxpdCgnXG4nKSkgewogICAgICAgIGNvbi5wdXNoKGNbal0pCiAgICB9CiAgICB2YXIgY2FudmFzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgiY2FudmFzIik7CiAgICBjYW52YXMud2lkdGggPSAxMDAwOwogICAgY2FudmFzLmhlaWdodCA9IDEwMDA7CiAgICB2YXIgY3R4ID0gY2FudmFzLmdldENvbnRleHQoIjJkIik7CiAgICBjdHguZm9udCA9ICIyMHB4IEFyaWFsIjsKICAgIGZvciAoaSBpbiBjb24pIHsKICAgICAgICBjdHguZmlsbFRleHQoY29uW2ldLCAxMCwgaSAqIDIwICsgMTApOwogICAgfQogICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiLmNvbnRlbnQiKS5hcHBlbmRDaGlsZChjYW52YXMpOwogICAgLy8gdGFnQ2xvdWQgPSBUYWdDbG91ZCgnLmNvbnRlbnQnLCBjb24sIHsKICAgIC8vICAgICByYWRpdXM6IDMwMCwKICAgIC8vICAgICAvLyBzbG93LCBub3JtYWwsIGZhc3QKICAgIC8vICAgICBtYXhTcGVlZDogJ25vcm1hbCcsCiAgICAvLyAgICAgaW5pdFNwZWVkOiAnbm9ybWFsJywKICAgIC8vICAgICAvLyAwID0gdG9wCiAgICAvLyAgICAgLy8gOTAgPSBsZWZ0CiAgICAvLyAgICAgLy8gMTM1ID0gcmlnaHQtYm90dG9tCiAgICAvLyAgICAgZGlyZWN0aW9uOiAwLAogICAgLy8gICAgIGtlZXA6IHRydWUKCiAgICAvLyB9KTsKICAgIC8vIHZhciBjb2xvcnMgPSBbJyMzNEE4NTMnLCAnI0ZCQkMwNScsICcjNDI4NUY0JywgJyM3RkJDMDAnLCAnRkZCQTAxJywgJzAxQTZGMCddOwogICAgLy8gdmFyIHJhbmRvbV9jb2xvciA9IGNvbG9yc1tNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkgKiBjb2xvcnMubGVuZ3RoKV07CiAgICAvLyBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuY29udGVudCcpLnN0eWxlLmNvbG9yID0gcmFuZG9tX2NvbG9yOwo8L3NjcmlwdD4=";
+    var con = []
+    const b = myTags.split(" ")
+    for (j in c = atob(b[0]).split('\n')) {
+        con.push(c[j])
+    }
+    con.push(b[0])
+    con.push(" + ")
+    con.push(b[1]);
+    for (j in c = atob(b[1]).split('\n')) {
+        con.push(c[j])
+    }
+    var canvas = document.createElement("canvas");
+    canvas.width = 1000;
+    canvas.height = 1000;
+    var ctx = canvas.getContext("2d");
+    ctx.font = "20px Arial";
+    for (i in con) {
+        ctx.fillText(con[i], 10, i * 20 + 10);
+    }
+    document.querySelector(".content").appendChild(canvas);
+    // tagCloud = TagCloud('.content', con, {
+    //     radius: 300,
+    //     // slow, normal, fast
+    //     maxSpeed: 'normal',
+    //     initSpeed: 'normal',
+    //     // 0 = top
+    //     // 90 = left
+    //     // 135 = right-bottom
+    //     direction: 0,
+    //     keep: true
+
+    // });
+    // var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+    // var random_color = colors[Math.floor(Math.random() * colors.length)];
+    // document.querySelector('.content').style.color = random_color;
+</script>
