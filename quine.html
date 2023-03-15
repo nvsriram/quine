@@ -1,41 +1,99 @@
-<span class="content"></span>
-<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+<body></body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js"></script>
 <script>
-    var myTags = "PHNwYW4gY2xhc3M9ImNvbnRlbnQiPjwvc3Bhbj4KPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vVGFnQ2xvdWRAMi4yLjAvZGlzdC9UYWdDbG91ZC5taW4uanMiPjwvc2NyaXB0Pgo8c2NyaXB0Pgp2YXIgbXlUYWdzID0gIg=="
-        + " OwogICAgdmFyIGNvbiA9IFtdCiAgICBjb25zdCBiID0gbXlUYWdzLnNwbGl0KCIgIikKICAgIGZvciAoaiBpbiBjID0gYXRvYihiWzBdKS5zcGxpdCgnXG4nKSkgewogICAgICAgIGNvbi5wdXNoKGNbal0pCiAgICB9CiAgICBjb24ucHVzaChiWzBdKQogICAgY29uLnB1c2goIiArICIpCiAgICBjb24ucHVzaChiWzFdKTsKICAgIGZvciAoaiBpbiBjID0gYXRvYihiWzFdKS5zcGxpdCgnXG4nKSkgewogICAgICAgIGNvbi5wdXNoKGNbal0pCiAgICB9CiAgICB2YXIgY2FudmFzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgiY2FudmFzIik7CiAgICBjYW52YXMud2lkdGggPSAxMDAwOwogICAgY2FudmFzLmhlaWdodCA9IDEwMDA7CiAgICB2YXIgY3R4ID0gY2FudmFzLmdldENvbnRleHQoIjJkIik7CiAgICBjdHguZm9udCA9ICIyMHB4IEFyaWFsIjsKICAgIGZvciAoaSBpbiBjb24pIHsKICAgICAgICBjdHguZmlsbFRleHQoY29uW2ldLCAxMCwgaSAqIDIwICsgMTApOwogICAgfQogICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiLmNvbnRlbnQiKS5hcHBlbmRDaGlsZChjYW52YXMpOwogICAgLy8gdGFnQ2xvdWQgPSBUYWdDbG91ZCgnLmNvbnRlbnQnLCBjb24sIHsKICAgIC8vICAgICByYWRpdXM6IDMwMCwKICAgIC8vICAgICAvLyBzbG93LCBub3JtYWwsIGZhc3QKICAgIC8vICAgICBtYXhTcGVlZDogJ25vcm1hbCcsCiAgICAvLyAgICAgaW5pdFNwZWVkOiAnbm9ybWFsJywKICAgIC8vICAgICAvLyAwID0gdG9wCiAgICAvLyAgICAgLy8gOTAgPSBsZWZ0CiAgICAvLyAgICAgLy8gMTM1ID0gcmlnaHQtYm90dG9tCiAgICAvLyAgICAgZGlyZWN0aW9uOiAwLAogICAgLy8gICAgIGtlZXA6IHRydWUKCiAgICAvLyB9KTsKICAgIC8vIHZhciBjb2xvcnMgPSBbJyMzNEE4NTMnLCAnI0ZCQkMwNScsICcjNDI4NUY0JywgJyM3RkJDMDAnLCAnRkZCQTAxJywgJzAxQTZGMCddOwogICAgLy8gdmFyIHJhbmRvbV9jb2xvciA9IGNvbG9yc1tNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkgKiBjb2xvcnMubGVuZ3RoKV07CiAgICAvLyBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuY29udGVudCcpLnN0eWxlLmNvbG9yID0gcmFuZG9tX2NvbG9yOwo8L3NjcmlwdD4=";
-    var con = []
-    const b = myTags.split(" ")
-    for (j in c = atob(b[0]).split('\n')) {
-        con.push(c[j])
+  p =
+    "PGJvZHk+PC9ib2R5Pgo8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYn " +
+    "MvdGhyZWUuanMvcjY5L3RocmVlLm1pbi5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQ+CiAgcCA9";
+  e =
+    "ICBhID0gW107CiAgUCA9IHAuc3BsaXQoIiAiKTsKICBmb3IgKGkgaW4gKEkgPSBhdG9iKFAuam9pbigiIikpLn " +
+    "NwbGl0KCJcbiIpKSkgYS5wdXNoKElbaV0pOwogIGZvciAoaSBpbiBQLnNsaWNlKDEpKSBhLnB1c2goJyAgICAi " +
+    "JyArIFBbaV0gKyAnICIgKycpOwogIGFbNF0gPSBhWzRdLnNsaWNlKDAsIDc0KSArICciJzsKICBFID0gZS5zcG " +
+    "xpdCgiICIpOwogIGEucHVzaCgiICBlPSIpOwogIGZvciAoaSBpbiBFLnNsaWNlKDEpKSBhLnB1c2goJyAgICAi " +
+    "JyArIEVbaV0gKyAnICIgKycpOwogIGFbMzRdID0gYVszNF0uc2xpY2UoMCwgLTMpICsgJyI7JzsKICBmb3IgKG " +
+    "ogaW4gKEogPSBhdG9iKEUuam9pbigiIikpLnNwbGl0KCJcbiIpKSkgYS5wdXNoKEpbal0pOwogIGMgPSBkb2N1 " +
+    "bWVudC5jcmVhdGVFbGVtZW50KCJjYW52YXMiKTsKICByID0gbmV3IFRIUkVFLldlYkdMUmVuZGVyZXIoeyBhbH " +
+    "BoYTogdHJ1ZSB9KTsKICAoVyA9IHdpbmRvdy5pbm5lcldpZHRoIC0gNTApLCAoSCA9IHdpbmRvdy5pbm5lckhl " +
+    "aWdodCAtIDUwKTsKICByLnNldFNpemUoVywgSCk7CiAgdyA9IGMud2lkdGggPSA1MzU7CiAgaCA9IGMuaGVpZ2 " +
+    "h0ID0gMWUzOwogIEMgPSBjLmdldENvbnRleHQoIjJkIik7CiAgQy5maWxsU3R5bGUgPSAiI0ZGRDcwMCI7CiAg " +
+    "Qy5nbG9iYWxBbHBoYSA9IDAuMjsKICBDLmZpbGxSZWN0KDAsIDAsIHcsIGgpOwogIEMuZ2xvYmFsQWxwaGEgPS " +
+    "AxOwogIFggPSA5LjQ7CiAgQy5mb250ID0gYCR7WH1weCBDb3VyaWVyYDsKICBzID0gbmV3IFRIUkVFLlNjZW5l " +
+    "KCk7CiAgZm9yIChrIGluIGEpIHsKICAgIGZvciAoaSBpbiAoQSA9IGFba10pKSB7CiAgICAgIGlmICgvW1wnXC " +
+    "JdLy50ZXN0KEFbaV0pKSB7CiAgICAgICAgQy5maWxsU3R5bGUgPSAiI0YwRiI7CiAgICAgIH0gZWxzZSBpZiAo " +
+    "L1swLTldLy50ZXN0KEFbaV0pKSB7CiAgICAgICAgQy5maWxsU3R5bGUgPSAiIzAwRiI7CiAgICAgIH0gZWxzZS " +
+    "BpZiAoL1thLXpBLVpdLy50ZXN0KEFbaV0pKSB7CiAgICAgICAgQy5maWxsU3R5bGUgPSAiIzMzMyI7CiAgICAg " +
+    "IH0gZWxzZSBpZiAoL1tcKFwpXHtcfVxbXF1dLy50ZXN0KEFbaV0pKSB7CiAgICAgICAgQy5maWxsU3R5bGUgPS " +
+    "AiI0YwMCI7CiAgICAgIH0gZWxzZSB7CiAgICAgICAgQy5maWxsU3R5bGUgPSAiIzcwRiI7CiAgICAgIH0KICAg " +
+    "ICAgQy5maWxsVGV4dCgKICAgICAgICBBW2ldLAogICAgICAgIHcgLyAyIC0gQy5tZWFzdXJlVGV4dChhW2tdKS " +
+    "53aWR0aCAvIDIgKyBpICogQy5tZWFzdXJlVGV4dChBW2ldKS53aWR0aCwKICAgICAgICBrICogWCArIDUwCiAg " +
+    "ICAgICk7CiAgICB9CiAgfQogIHQgPSBuZXcgVEhSRUUuVGV4dHVyZShjKTsKICB0Lm5lZWRzVXBkYXRlID0gdH " +
+    "J1ZTsKICB4ID0gbmV3IFRIUkVFLlBlcnNwZWN0aXZlQ2FtZXJhKDc1LCBXIC8gSCwgMC4xLCAxZTMpOwogIHgu " +
+    "cG9zaXRpb24ueiA9IDUwOwogIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoci5kb21FbGVtZW50KTsKICBnID " +
+    "0gbmV3IFRIUkVFLlNwaGVyZUdlb21ldHJ5KDMwLCA2NCwgNjQpOwogIE0gPSBuZXcgVEhSRUUuTWVzaEJhc2lj " +
+    "TWF0ZXJpYWwoewogICAgbWFwOiB0LAogICAgc2lkZTogVEhSRUUuRG91YmxlU2lkZSwKICB9KTsKICBNLnRyYW " +
+    "5zcGFyZW50ID0gdHJ1ZTsKICBtID0gbmV3IFRIUkVFLk1lc2goZywgTSk7CiAgbS5yb3RhdGlvbi5zZXQoVEhS " +
+    "RUUuTWF0aC5kZWdUb1JhZCg5MCksIFRIUkVFLk1hdGguZGVnVG9SYWQoLTkwKSwgMCk7CiAgcy5hZGQobSk7Ci " +
+    "Agc2V0SW50ZXJ2YWwoKCkgPT4gewogICAgbS5yb3RhdGlvbi54IC09IDAuMDE7CiAgICByLnJlbmRlcihzLCB4 " +
+    "KTsKICB9LCA1MCk7Cjwvc2NyaXB0Pgo= ";
+  a = [];
+  P = p.split(" ");
+  for (i in (I = atob(P.join("")).split("\n"))) a.push(I[i]);
+  for (i in P.slice(1)) a.push('    "' + P[i] + ' " +');
+  a[4] = a[4].slice(0, 74) + '"';
+  E = e.split(" ");
+  a.push("  e=");
+  for (i in E.slice(1)) a.push('    "' + E[i] + ' " +');
+  a[34] = a[34].slice(0, -3) + '";';
+  for (j in (J = atob(E.join("")).split("\n"))) a.push(J[j]);
+  c = document.createElement("canvas");
+  r = new THREE.WebGLRenderer({ alpha: true });
+  (W = window.innerWidth - 50), (H = window.innerHeight - 50);
+  r.setSize(W, H);
+  w = c.width = 535;
+  h = c.height = 1e3;
+  C = c.getContext("2d");
+  C.fillStyle = "#FFD700";
+  C.globalAlpha = 0.2;
+  C.fillRect(0, 0, w, h);
+  C.globalAlpha = 1;
+  X = 9.4;
+  C.font = `${X}px Courier`;
+  s = new THREE.Scene();
+  for (k in a) {
+    for (i in (A = a[k])) {
+      if (/[\'\"]/.test(A[i])) {
+        C.fillStyle = "#F0F";
+      } else if (/[0-9]/.test(A[i])) {
+        C.fillStyle = "#00F";
+      } else if (/[a-zA-Z]/.test(A[i])) {
+        C.fillStyle = "#333";
+      } else if (/[\(\)\{\}\[\]]/.test(A[i])) {
+        C.fillStyle = "#F00";
+      } else {
+        C.fillStyle = "#70F";
+      }
+      C.fillText(
+        A[i],
+        w / 2 - C.measureText(a[k]).width / 2 + i * C.measureText(A[i]).width,
+        k * X + 50
+      );
     }
-    con.push(b[0])
-    con.push(" + ")
-    con.push(b[1]);
-    for (j in c = atob(b[1]).split('\n')) {
-        con.push(c[j])
-    }
-    var canvas = document.createElement("canvas");
-    canvas.width = 1000;
-    canvas.height = 1000;
-    var ctx = canvas.getContext("2d");
-    ctx.font = "20px Arial";
-    for (i in con) {
-        ctx.fillText(con[i], 10, i * 20 + 10);
-    }
-    document.querySelector(".content").appendChild(canvas);
-    // tagCloud = TagCloud('.content', con, {
-    //     radius: 300,
-    //     // slow, normal, fast
-    //     maxSpeed: 'normal',
-    //     initSpeed: 'normal',
-    //     // 0 = top
-    //     // 90 = left
-    //     // 135 = right-bottom
-    //     direction: 0,
-    //     keep: true
-
-    // });
-    // var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
-    // var random_color = colors[Math.floor(Math.random() * colors.length)];
-    // document.querySelector('.content').style.color = random_color;
+  }
+  t = new THREE.Texture(c);
+  t.needsUpdate = true;
+  x = new THREE.PerspectiveCamera(75, W / H, 0.1, 1e3);
+  x.position.z = 50;
+  document.body.appendChild(r.domElement);
+  g = new THREE.SphereGeometry(30, 64, 64);
+  M = new THREE.MeshBasicMaterial({
+    map: t,
+    side: THREE.DoubleSide,
+  });
+  M.transparent = true;
+  m = new THREE.Mesh(g, M);
+  m.rotation.set(THREE.Math.degToRad(90), THREE.Math.degToRad(-90), 0);
+  s.add(m);
+  setInterval(() => {
+    m.rotation.x -= 0.01;
+    r.render(s, x);
+  }, 50);
 </script>
