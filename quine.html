@@ -9,7 +9,7 @@
     "NwbGl0KCJcbiIpKSkgYS5wdXNoKElbaV0pOwogIGZvciAoaSBpbiBQKSBhLnB1c2goJyAgICAiJyArIFBbaV0g " +
     "KyAnICIgKycpOwogIGFbNV0gPSBhWzVdLnNsaWNlKDAsIC00KSArICciOyc7CiAgRSA9IGUuc3BsaXQoIiAiKT " +
     "sKICBhLnB1c2goIiAgZSA9Iik7CiAgZm9yIChpIGluIEUpIGEucHVzaCgnICAgICInICsgRVtpXSArICcgIiAr " +
-    "Jyk7CiAgYVszNF0gPSBhWzM0XS5zbGljZSgwLCAtNCkgKyAnIjsnOwogIGZvciAoaiBpbiAoSiA9IGF0b2IoRS " +
+    "Jyk7CiAgYVszNV0gPSBhWzM1XS5zbGljZSgwLCAtNCkgKyAnIjsnOwogIGZvciAoaiBpbiAoSiA9IGF0b2IoRS " +
     "5qb2luKCIiKSkuc3BsaXQoIlxuIikpKSBhLnB1c2goSltqXSk7CiAgciA9IG5ldyBUSFJFRS5XZWJHTFJlbmRl " +
     "cmVyKHsgYWxwaGE6IHRydWUgfSk7CiAgKFcgPSB3aW5kb3cuaW5uZXJXaWR0aCAtIDUwKSwgKEggPSB3aW5kb3 " +
     "cuaW5uZXJIZWlnaHQgLSA1MCk7CiAgci5zZXRTaXplKFcsIEgpOwogIGMgPSBkb2N1bWVudC5jcmVhdGVFbGVt " +
@@ -30,9 +30,10 @@
     "CiAgZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChyLmRvbUVsZW1lbnQpOwogIGcgPSBuZXcgVEhSRUUuU3BoZX " +
     "JlR2VvbWV0cnkoMzAsIDY0LCA2NCk7CiAgTSA9IG5ldyBUSFJFRS5NZXNoQmFzaWNNYXRlcmlhbCh7CiAgICBt " +
     "YXA6IHQsCiAgICBzaWRlOiBUSFJFRS5Eb3VibGVTaWRlLAogIH0pOwogIE0udHJhbnNwYXJlbnQgPSB0cnVlOw " +
-    "ogIG0gPSBuZXcgVEhSRUUuTWVzaChnLCBNKTsKICBtLnJvdGF0aW9uLnNldChNYXRoLlBJIC8gMiwgLU1hdGgu " +
-    "UEkgLyAyLCAwKTsKICBzLmFkZChtKTsKICBzZXRJbnRlcnZhbCgoKSA9PiB7CiAgICBtLnJvdGF0aW9uLnggLT " +
-    "0gMC4wMTsKICAgIHIucmVuZGVyKHMsIHgpOwogIH0sIDUwKTsKPC9zY3JpcHQ+Cg==";
+    "ogIE0uZGVwdGhXcml0ZSA9IGZhbHNlOwogIG0gPSBuZXcgVEhSRUUuTWVzaChnLCBNKTsKICBtLnJvdGF0aW9u " +
+    "LnNldChNYXRoLlBJIC8gMiwgLU1hdGguUEkgLyAyLCAwKTsKICBzLmFkZChtKTsKICBzZXRJbnRlcnZhbCgoKS " +
+    "A9PiB7CiAgICBtLnJvdGF0aW9uLnggLT0gMC4wMTsKICAgIHIucmVuZGVyKHMsIHgpOwogIH0sIDUwKTsKPC9z " +
+    "Y3JpcHQ+Cg==";
   a = [];
   P = p.split(" ");
   for (i in (I = atob(P.join("")).split("\n"))) a.push(I[i]);
@@ -41,7 +42,7 @@
   E = e.split(" ");
   a.push("  e =");
   for (i in E) a.push('    "' + E[i] + ' " +');
-  a[34] = a[34].slice(0, -4) + '";';
+  a[35] = a[35].slice(0, -4) + '";';
   for (j in (J = atob(E.join("")).split("\n"))) a.push(J[j]);
   r = new THREE.WebGLRenderer({ alpha: true });
   (W = window.innerWidth - 50), (H = window.innerHeight - 50);
@@ -54,7 +55,7 @@
   C.globalAlpha = 0.2;
   C.fillRect(0, 0, w, h);
   C.globalAlpha = 1;
-  X = 9.4;
+  X = 9.3;
   C.font = `${X}px Courier`;
   s = new THREE.Scene();
   for (k in a) {
@@ -88,6 +89,7 @@
     side: THREE.DoubleSide,
   });
   M.transparent = true;
+  M.depthWrite = false;
   m = new THREE.Mesh(g, M);
   m.rotation.set(Math.PI / 2, -Math.PI / 2, 0);
   s.add(m);
