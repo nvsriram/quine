@@ -1,4 +1,4 @@
-# Quine
+![Banner](https://github.com/nvsriram/quine/assets/50625504/4faae768-d078-49a4-a70e-5143a0907786)
 
 [From Wikipedia](https://en.wikipedia.org/wiki/Quine_(computing)): A quine is a computer program which takes no input and produces a copy of its own source code as its only output. The standard terms for these programs in the computability theory and computer science literature are "self-replicating programs", "self-reproducing programs", and "self-copying programs".
 
