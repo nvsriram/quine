@@ -13,7 +13,6 @@ While making an HTML quine there were two main things I needed to establish:
 * **Encoding/Decoding Method**: The underlying code has characters like `'` and `"` that would normally need to be escaped by the language. To go around this, I used _Base-64_ encoding as that can easily encode and decode these characters
 * **Output Format**: Most quines online take the form of displaying the underlying code either via the console or as text displayed on the page. I took the route by displaying the underlying code in a rotating sphere generated using `three.js` with a canvas as its texture ;)
 
-
 ## 💻 Implementation
 
 * My quine is in HTML but the real code logic lies in the Javascript script
